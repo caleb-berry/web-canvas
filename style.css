@@ -462,3 +462,203 @@ body {
     50% { top: 20%; left: 85%; }
     75% { top: 15%; left: 80%; }
 }
+
+/* Mobile Optimizations */
+@media (max-width: 768px) {
+    #title {
+        font-size: 2em; /* Smaller font size for title */
+        top: 3%; /* Slightly adjust top position if needed */
+    }
+
+    .container {
+        width: 95vw; /* Slightly wider container if needed */
+    }
+
+    /* --- Mobile Planet Sizes (Increased) --- */
+    #circle-1 { width: 60px; height: 60px; } /* Was 40px */
+    #circle-2 { width: 80px; height: 80px; } /* Was 55px */
+    #circle-3 { width: 85px; height: 85px; } /* Was 60px */
+    #circle-4 { width: 65px; height: 65px; } /* Was 45px */
+    #circle-5 { width: 110px; height: 110px; 
+        /* Re-apply gradient override with new mobile size */
+        background: repeating-linear-gradient(0deg, #e67e22 0px, #e67e22 8px, #f39c12 8px, #f39c12 16px, #d35400 16px, #d35400 24px, #f39c12 24px, #f39c12 32px);
+    } /* Was 75px */
+    #circle-6 { width: 95px; height: 95px; } /* Was 65px */
+    #circle-7 { width: 70px; height: 70px; } /* Was 50px */
+    #circle-8 { width: 80px; height: 80px; } /* Was 55px */
+    #circle-9 { width: 50px; height: 50px; } /* Was 35px */
+    #circle-10 { width: 60px; height: 60px; } /* Was 42px */
+    
+    /* --- Mobile Scaled Planet Details (Resized) --- */
+    #circle-1::before {
+        background: 
+            radial-gradient(circle at 20% 30%, #999 0, #999 3px, transparent 3px),
+            radial-gradient(circle at 70% 40%, #999 0, #999 2px, transparent 2px),
+            radial-gradient(circle at 40% 80%, #999 0, #999 3.5px, transparent 3.5px),
+            radial-gradient(circle at 80% 20%, #999 0, #999 3px, transparent 3px),
+            radial-gradient(circle at 10% 60%, #999 0, #999 2px, transparent 2px);
+    }
+    #circle-2::before {
+         /* Adjusted conic stops slightly for new size */
+         background: conic-gradient(from 0deg, transparent 0deg, transparent 25deg, rgba(255, 153, 0, 0.4) 25deg, rgba(255, 153, 0, 0.4) 50deg, transparent 50deg, transparent 75deg, rgba(255, 153, 0, 0.4) 75deg, rgba(255, 153, 0, 0.4) 100deg, transparent 100deg, transparent 125deg, rgba(255, 153, 0, 0.4) 125deg, rgba(255, 153, 0, 0.4) 150deg, transparent 150deg, transparent 175deg, rgba(255, 153, 0, 0.4) 175deg, rgba(255, 153, 0, 0.4) 200deg, transparent 200deg, transparent 225deg, rgba(255, 153, 0, 0.4) 225deg, rgba(255, 153, 0, 0.4) 250deg, transparent 250deg, transparent 275deg, rgba(255, 153, 0, 0.4) 275deg, rgba(255, 153, 0, 0.4) 300deg, transparent 300deg, transparent 325deg, rgba(255, 153, 0, 0.4) 325deg, rgba(255, 153, 0, 0.4) 350deg, transparent 350deg, transparent 360deg);
+    }
+    #circle-3::before {
+        background: 
+            radial-gradient(ellipse at 25% 30%, #2ecc71 0, #2ecc71 14px, transparent 14px),
+            radial-gradient(ellipse at 60% 70%, #2ecc71 0, #2ecc71 17px, transparent 17px),
+            radial-gradient(ellipse at 80% 40%, #2ecc71 0, #2ecc71 11px, transparent 11px),
+            radial-gradient(ellipse at 15% 70%, #2ecc71 0, #2ecc71 13px, transparent 13px),
+            radial-gradient(circle at 40% 20%, rgba(255, 255, 255, 0.4) 0, rgba(255, 255, 255, 0.4) 11px, transparent 11px);
+    }
+    #circle-4::before {
+         background: 
+            radial-gradient(circle at 30% 35%, #c0392b 0, #c0392b 7px, transparent 7px),
+            radial-gradient(circle at 70% 25%, #c0392b 0, #c0392b 6px, transparent 6px),
+            radial-gradient(circle at 50% 60%, #c0392b 0, #c0392b 9px, transparent 9px),
+            radial-gradient(circle at 20% 70%, #c0392b 0, #c0392b 5px, transparent 5px),
+            radial-gradient(circle at 80% 60%, #c0392b 0, #c0392b 6.5px, transparent 6.5px);
+    }
+    #circle-5::after { /* Adjust Jupiter spot size/pos */
+        width: 30px;
+        height: 30px;
+        top: 22px;
+        left: 22px;
+    }
+     #circle-6::before {
+        background: repeating-radial-gradient(circle, transparent 0, transparent 12px, rgba(243, 156, 18, 0.4) 12px, rgba(243, 156, 18, 0.4) 16px);
+    }
+    #circle-6::after { /* Adjust Saturn ring for larger mobile size */
+        width: 130px;
+        height: 28px;
+        top: 33px;
+        left: -17px;
+    }
+    #circle-7::before {
+        background: repeating-linear-gradient(45deg, transparent 0px, transparent 7px, rgba(41, 128, 185, 0.5) 7px, rgba(41, 128, 185, 0.5) 14px);
+    }
+    #circle-8::before {
+         background: 
+            radial-gradient(circle at 30% 30%, #3498db 0, #3498db 10px, transparent 10px),
+            radial-gradient(circle at 70% 70%, #3498db 0, #3498db 14px, transparent 14px),
+            radial-gradient(circle at 40% 80%, #3498db 0, #3498db 7px, transparent 7px),
+            radial-gradient(circle at 80% 40%, #3498db 0, #3498db 9px, transparent 9px);
+    }
+     #circle-9::before {
+        background: 
+            radial-gradient(circle at 20% 30%, #7f8c8d 0, #7f8c8d 3.5px, transparent 3.5px),
+            radial-gradient(circle at 50% 50%, #7f8c8d 0, #7f8c8d 3px, transparent 3px),
+            radial-gradient(circle at 70% 70%, #7f8c8d 0, #7f8c8d 4px, transparent 4px),
+            radial-gradient(circle at 80% 30%, #7f8c8d 0, #7f8c8d 2px, transparent 2px),
+            radial-gradient(circle at 30% 60%, #7f8c8d 0, #7f8c8d 3px, transparent 3px);
+    }
+     #circle-10::before {
+         background: 
+            radial-gradient(circle at 30% 35%, rgba(127, 140, 141, 0.7) 0, rgba(127, 140, 141, 0.7) 6px, transparent 6px),
+            radial-gradient(circle at 60% 20%, rgba(127, 140, 141, 0.5) 0, rgba(127, 140, 141, 0.5) 8px, transparent 8px),
+            radial-gradient(circle at 70% 60%, rgba(127, 140, 141, 0.6) 0, rgba(127, 140, 141, 0.6) 7px, transparent 7px),
+            radial-gradient(circle at 20% 60%, rgba(127, 140, 141, 0.4) 0, rgba(127, 140, 141, 0.4) 5px, transparent 5px),
+            radial-gradient(circle at 50% 80%, rgba(127, 140, 141, 0.5) 0, rgba(127, 140, 141, 0.5) 6.5px, transparent 6.5px);
+    }
+
+    /* --- Adjust animation ranges for mobile --- */
+    @keyframes float-1-mobile {
+        0%, 100% { top: 15%; left: 10%; }
+        25% { top: 20%; left: 25%; }
+        50% { top: 25%; left: 15%; }
+        75% { top: 20%; left: 5%; }
+    }
+    .container a:has(#circle-1) { animation-name: float-1-mobile; }
+
+    @keyframes float-2-mobile {
+        0%, 100% { top: 30%; left: 60%; }
+        25% { top: 35%; left: 75%; }
+        50% { top: 40%; left: 65%; }
+        75% { top: 35%; left: 55%; }
+    }
+    .container a:has(#circle-2) { animation-name: float-2-mobile; }
+
+    @keyframes float-3-mobile {
+        0%, 100% { top: 45%; left: 20%; }
+        25% { top: 50%; left: 35%; }
+        50% { top: 55%; left: 25%; }
+        75% { top: 50%; left: 15%; }
+    }
+    .container a:has(#circle-3) { animation-name: float-3-mobile; }
+
+    @keyframes float-4-mobile {
+        0%, 100% { top: 60%; left: 70%; }
+        25% { top: 65%; left: 85%; }
+        50% { top: 70%; left: 75%; }
+        75% { top: 65%; left: 65%; }
+    }
+    .container a:has(#circle-4) { animation-name: float-4-mobile; }
+
+    @keyframes float-5-mobile {
+        0%, 100% { top: 75%; left: 40%; }
+        25% { top: 80%; left: 55%; }
+        50% { top: 85%; left: 45%; }
+        75% { top: 80%; left: 35%; }
+    }
+    .container a:has(#circle-5) { animation-name: float-5-mobile; }
+    
+    @keyframes float-6-mobile {
+        0%, 100% { top: 10%; left: 80%; }
+        25% { top: 15%; left: 65%; }
+        50% { top: 20%; left: 75%; }
+        75% { top: 15%; left: 85%; }
+    }
+    .container a:has(#circle-6) { animation-name: float-6-mobile; }
+
+    @keyframes float-7-mobile {
+        0%, 100% { top: 25%; left: 40%; }
+        25% { top: 30%; left: 55%; }
+        50% { top: 35%; left: 45%; }
+        75% { top: 30%; left: 35%; }
+    }
+     .container a:has(#circle-7) { animation-name: float-7-mobile; }
+
+    @keyframes float-8-mobile {
+        0%, 100% { top: 55%; left: 5%; }
+        25% { top: 60%; left: 20%; }
+        50% { top: 65%; left: 10%; }
+        75% { top: 60%; left: 0%; }
+    }
+     .container a:has(#circle-8) { animation-name: float-8-mobile; }
+
+    @keyframes float-9-mobile {
+        0%, 100% { top: 70%; left: 80%; }
+        25% { top: 75%; left: 65%; }
+        50% { top: 80%; left: 75%; }
+        75% { top: 75%; left: 85%; }
+    }
+     .container a:has(#circle-9) { animation-name: float-9-mobile; }
+
+    @keyframes float-10-mobile {
+        0%, 100% { top: 85%; left: 10%; }
+        25% { top: 90%; left: 25%; }
+        50% { top: 95%; left: 15%; }
+        75% { top: 90%; left: 5%; }
+    }
+     .container a:has(#circle-10) { animation-name: float-10-mobile; }
+
+    #pro-tip {
+        font-size: 0.6em; /* Even smaller on mobile */
+        bottom: 1%; /* Adjust position slightly */
+    }
+}
+
+#pro-tip {
+    position: absolute;
+    bottom: 2%; /* Position near the bottom */
+    left: 50%;
+    transform: translateX(-50%); /* Center horizontally */
+    color: rgba(255, 255, 255, 0.5); /* Dimmer white */
+    font-size: 0.8em; /* Much smaller font size */
+    text-align: center;
+    z-index: 5; /* Same level as title, above background/stars */
+    text-shadow: 
+        0 0 3px rgba(255, 255, 255, 0.5), 
+        0 0 5px rgba(0, 255, 255, 0.3); /* Very subtle glow */
+    pointer-events: none; /* Not clickable */
+    letter-spacing: 1px; /* Optional: bit more spacing */
+}
